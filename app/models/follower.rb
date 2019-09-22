@@ -35,7 +35,7 @@ class Follower
 
 		most = count.sort_by { |k, v| v }[-1][0]
 
-		Follower.all.select { |follower|follower.follower_name == most }
+		Follower.all.select { |follower| follower.follower_name == most }
 	end
 
 	def self.top_ten
